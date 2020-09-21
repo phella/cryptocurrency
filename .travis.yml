@@ -6,4 +6,4 @@ before_install:
   - docker build -t philo/cryptocurrency -f Dockerfile.dev .
 
 script:
-  - docker run hilo/cryptocurrency npm run test -- --coverage
+  - docker run philo/cryptocurrency npm run test -- --coverage
