@@ -1,0 +1,22 @@
+#Base Image
+FROM node:alpine
+
+# work directory 
+WORKDIR /usr/app
+
+# Copy dependencies file
+COPY ./package.json ./
+
+# Download and Install dependencies
+RUN npm install
+
+# Copy files
+# COPY ./ ./ no need if docker compose is used
+
+# Running command
+CMD ["npm","start"]
+
+
+
+#docker build -t phella/nodejs .
+#docker run -p 3000:3000 phella/nodejs

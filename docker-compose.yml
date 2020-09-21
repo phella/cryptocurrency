@@ -1,0 +1,24 @@
+version: '3'
+services: 
+    redis-server:
+        image: 'redis'
+        restart: always
+    node-app:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - "8081:8081"
+        volumes:
+            - /node_modules
+            - .:/app
+        restart: always
+    tests: 
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        volumes:
+            - /node_modules
+            - .:/app
+        comamand: ["npm", "run", "test"]
+#docker-compose up --build
