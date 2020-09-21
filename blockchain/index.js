@@ -2,7 +2,7 @@ const Block = require('./block');
 const Transaction = require('../wallet/transaction');
 const Wallet = require('../wallet');
 const { cryptoHash } = require('../util');
-var _ = require('lodash/core');
+var _ = require('lodash');
 const { REWARD_INPUT, MINING_REWARD } = require('../config');
 
 class Blockchain{
