@@ -1,4 +1,4 @@
-const Block = require('./Block');
+const Block = require('./block');
 const Transaction = require('../wallet/transaction');
 const Wallet = require('../wallet');
 const { cryptoHash } = require('../util');
