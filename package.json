@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --watchAll --colors",
+    "test": "jest --colors --forceExit --detectOpenHandles --coverage",
     "dev": "nodemon index.js",
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js"
   },
