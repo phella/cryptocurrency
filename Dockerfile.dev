@@ -11,7 +11,9 @@ COPY ./package.json ./
 RUN npm install
 
 # Copy files
-# COPY ./ ./ no need if docker compose is used
+# no need if docker compose is used
+COPY ./ ./  
+
 
 # Running command
 CMD ["npm","start"]
