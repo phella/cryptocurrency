@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --colors --forceExit --detectOpenHandles --coverage ",
-    "test:coveralls": "jest --colors --forceExit --detectOpenHandles --coverage | coveralls ",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls ",
     "dev": "nodemon index.js",
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js"
   },
