@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --colors --forceExit --detectOpenHandles --coverage",
+    "test": "jest --colors --forceExit --detectOpenHandles --coverage ",
+    "test:coveralls": "jest --colors --forceExit --detectOpenHandles --coverage | coveralls ",
     "dev": "nodemon index.js",
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js"
   },
@@ -20,6 +21,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
     "elliptic": "^6.5.3",
     "express": "^4.17.1",
