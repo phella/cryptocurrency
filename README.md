@@ -32,3 +32,14 @@ then run
 npm install
 npm start
 ```
+
+#API
+| Method | Url | Description
+| --- | --- | --- |
+| get | /api/blocks | Return blockchain |
+| post| /api/mine | Mine new Block |
+| post| /api/transact | Generate new Transactions|
+| get | /api/transaction-pool-map | Return all transactions|
+| post| /api/mine-transactions | Mine Block for new transactions|
+| get| /api/wallet-info | to return my wallet balance|
+
